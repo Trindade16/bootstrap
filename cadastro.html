@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body style="background: rgb(46,9,69);">
+<body>
+	<!--#9264dd--->
     <div class="container" style="position:absolute; left:0; right:0; top: 50%; transform: translateY(-50%); -ms-transform: translateY(-50%); -moz-transform: translateY(-50%); -webkit-transform: translateY(-50%); -o-transform: translateY(-50%);">
         <div class="row d-flex d-xl-flex justify-content-center justify-content-xl-center">
             <div class="col-sm-12 col-lg-10 col-xl-9 col-xxl-7 bg-white shadow-lg" style="border-radius: 5px;">
@@ -23,11 +24,13 @@
                         <h4 class="text-dark mb-4">Crie sua Conta!</h4>
                     </div>
                     <form class="user">
-                        <div class="mb-3"><input class="form-control form-control-user" type="text" placeholder="Username" required=""></div>
-                        <div class="mb-3"><input class="form-control form-control-user" type="email" id="email" placeholder="Email Address" required=""></div>
+                        <div class="mb-3"><input class="form-control form-control-user" type="text" placeholder="Usuario" required=""></div>
+                        <div class="mb-3"><input class="form-control form-control-user" type="email" id="email" placeholder="Email" required=""></div>
                         <div class="row mb-3">
-                            <div class="col-sm-6 mb-3 mb-sm-0"><input class="form-control form-control-user" type="password" id="password" placeholder="Password" required=""></div>
-                            <div class="col-sm-6"><input class="form-control form-control-user" type="password" id="verifyPassword" placeholder="Repeat Password" required=""></div>
+                            <div class="col-sm-6 mb-3 mb-sm-0"><input class="form-control form-control-user" type="password" id="password" placeholder="Senha" required=""></div>
+                            <div class="col-sm-6">
+								<input class="form-control form-control-user" type="password" id="verifyPassword" placeholder="Repetir a Senha" required="">
+							</div>
                         </div>
                         <div class="row mb-3">
                             <div class="col-sm-6 mb-3 mb-sm-0"><input class="form-control form-control-user" type="text" placeholder="First Name" required=""></div>
@@ -36,14 +39,17 @@
                         <div class="row mb-3">
                             <p id="emailErrorMsg" class="text-danger" style="display:none;">Paragraph</p>
                             <p id="passwordErrorMsg" class="text-danger" style="display:none;">Paragraph</p>
-                        </div><a class="btn btn-primary d-block btn-user w-100" role="button" id="submitBtn" href="login.html">Cadastro</a>
+                        </div>
+						<a class="btn btn-primary d-block btn-user w-100" role="button" id="submitBtn" href="login.html" style="background-color: #9264dd">Cadastro</a>
                         <hr>
                     </form>
-                    <div class="text-center"><a class="small" href="forgot-password.html">Forgot Password?</a></div>
-                    <div class="text-center"><a class="small" href="login.html">Possui conta?Faça login</a></div>
+                    <div class="text-center"><a class="small" href="forgot-password.html" style="color: #9264dd">Esqueceu a Senha?</a></div>
+                    <div class="text-center"><a class="small" href="login.html" style="color: #9264dd">Possui conta?Faça login</a></div>
                 </div>
             </div>
-        </div><script>
+        </div>
+		
+		<script>
 	let email = document.getElementById("email")
 	let password = document.getElementById("password")
 	let verifyPassword = document.getElementById("verifyPassword")
