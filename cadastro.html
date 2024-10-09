@@ -17,38 +17,39 @@
 </head>
 
 <body>
-	<!--#9264dd--->
     <div class="container" style="position:absolute; left:0; right:0; top: 50%; transform: translateY(-50%); -ms-transform: translateY(-50%); -moz-transform: translateY(-50%); -webkit-transform: translateY(-50%); -o-transform: translateY(-50%);">
         <div class="row d-flex d-xl-flex justify-content-center justify-content-xl-center">
             <div class="col-sm-12 col-lg-10 col-xl-9 col-xxl-7 bg-white shadow-lg" style="border-radius: 5px;">
                 <div class="p-5">
                     <div class="text-center">
-                        <h4 class="text-dark mb-4">Crie sua Conta!</h4>
+                        <h4 class="text-dark mb-4">Crie sua Conta</h4>
                     </div>
                     <form class="user">
-                        <div class="mb-3"><input class="form-control form-control-user" type="email" id="email" placeholder="Email" required=""></div>
+                        <div class="mb-3"><input class="form-control form-control-user" type="email" id="email" placeholder="Email*" required=""></div>
                         <div class="row mb-3">
-                            <div class="mb-3 mb-sm-0"><input class="form-control form-control-user" type="password" id="password" placeholder="Senha" required=""></div>
+                            <div class="mb-3 mb-sm-0"><input class="form-control form-control-user" type="password" id="password" placeholder="Senha*" required=""></div>
                             <div class="mt-3">
-								<input class="form-control form-control-user" type="password" id="verifyPassword" placeholder="Repetir a Senha" required="">
+								<input class="form-control form-control-user" type="password" id="verifyPassword" placeholder="Repetir a Senha*" required="">
 							</div>
                         </div>
                         <div class="row mb-3">
-                            <div class="col-sm-6 mb-3 mb-sm-0"><input class="form-control form-control-user" type="text" placeholder="Primeiro Nome" required=""></div>
-                            <div class="col-sm-6"><input class="form-control form-control-user" type="text" placeholder="Ultimo Nome" required=""></div>
+                            <div class="col-sm mb-3 mb-sm-0"><input class="form-control form-control-user" type="text" placeholder="Nome Completo*" required=""></div>
+                            <div class="col-sm mb-3 mb-sm-0"><input class="form-control form-control-user" type="text" placeholder="Telefone*" required=""></div>
+							<!--<div class="col-sm-6"><input class="form-control form-control-user" type="text" placeholder="Ultimo Nome" required=""></div>-->
+							
                         </div>
 
 						<div class="row mb-3">
-                            <div class="col-sm-6 mb-3 mb-sm-0"><input class="form-control form-control-user" type="text" placeholder="CPF" required=""></div>
-                            <div class="col-sm-6"><input class="form-control form-control-user" type="text" placeholder="CNPJ" required=""></div>
+                            <div class="col-sm-6 mb-3 mb-sm-0"><input class="form-control form-control-user" type="text" placeholder="CPF*" required=""></div>
+                            <div class="col-sm-6"><input class="form-control form-control-user" type="text" placeholder="CNPJ*" required=""></div>
                         </div>
 
 						<div class="row mb-3">
 							<div class="col-sm-6">
-								<input type="text" class="form-control" id="datepicker" placeholder="Data" />
+								<input type="text" class="form-control" id="datepicker" placeholder="Data de Nascimento*" />
 							</div>
                             <div class="col-sm-6 mb-3 mb-sm-0"><select class="form-select">
-								<option selected>Especialidade</option>
+								<option selected>Especialidade*</option>
 								<option value="Hardware">Hardwares</option>
 								<option value="Sofware">Softwares</option>
 								<option value="DSA">Desenvolvimento de Aplicações</option>
@@ -62,11 +63,20 @@
                             <p id="emailErrorMsg" class="text-danger" style="display:none;">Paragraph</p>
                             <p id="passwordErrorMsg" class="text-danger" style="display:none;">Paragraph</p>
                         </div>
-						<a class="btn btn-primary d-block btn-user w-100" role="button" id="submitBtn" href="login.html" style="background-color: #9264dd">Cadastro</a>
+						<a class="btn d-block btn-user w-100" 
+							role="button" 
+							id="submitBtn" 
+							href="login.html" 
+							style="background-color: #9264dd; color: white;">Cadastro
+						</a>
                         <hr>
                     </form>
-                    <div class="text-center"><a class="small" href="forgot-password.html" style="color: #9264dd">Esqueceu a Senha?</a></div>
-                    <div class="text-center"><a class="small" href="login.html" style="color: #9264dd">Possui conta?Faça login</a></div>
+					<div class="text-center mt-2">
+						<a class="small" href="forgot-password.html" style="color: #9264dd">Esqueceu a Senha?</a>
+					</div>
+					<div class="text-center mt-2 mb-3">
+						<a class="small" href="login.html" style="color: #9264dd">Possui conta? Faça login</a>
+					</div>
                 </div>
             </div>
         </div>
